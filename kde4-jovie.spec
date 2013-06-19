@@ -5,12 +5,12 @@
 
 Summary:	K Desktop Environment - KDE text to speech system application
 Name:		kde4-jovie
-Version:	4.10.0
+Version:	4.10.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	b7f703298912fda547d3c6a5618cc343
+# Source0-md5:	6331166add8935fe2f6b60363b24e289
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	speech-dispatcher-devel
