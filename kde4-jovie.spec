@@ -5,16 +5,16 @@
 
 Summary:	K Desktop Environment - KDE text to speech system application
 Name:		kde4-jovie
-Version:	4.10.4
+Version:	4.12.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	6331166add8935fe2f6b60363b24e289
+# Source0-md5:	9e9e9f8df3b0e8c681fd067a32385dac
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	speech-dispatcher-devel
-Requires:	kde4-kdebase-workspace >= %{version}
+Requires:	kde4-kdebase-workspace >= 4.11.4
 Obsoletes:	kde4-kdeaccessibility-jovie
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libkttsd.so.*.*
 %attr(755,root,root) %ghost %{_libdir}/libkttsd.so.?
 %{_datadir}/apps/jovie
-%{_datadir}/apps/kttsd
+#%{_datadir}/apps/kttsd
 %{_datadir}/kde4/services/jovie.desktop
 %{_datadir}/kde4/services/jovie_stringreplacerplugin.desktop
 %{_datadir}/kde4/services/jovie_talkerchooserplugin.desktop
